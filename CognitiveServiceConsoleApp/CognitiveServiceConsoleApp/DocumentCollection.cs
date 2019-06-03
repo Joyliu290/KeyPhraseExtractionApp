@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 public class DocumentCollection
 {
     private Document[] documents;
