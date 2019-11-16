@@ -18,10 +18,10 @@ namespace CognitiveServiceConsoleApp
             Console.WriteLine("Starting key-phrase extraction:");
 
             // Need to handle file-open exceptions such as when file doesn't exist
-            string textToBeExtracted = System.IO.File.ReadAllText(@"C:\Users\Joyli\Desktop\smallerInputText.txt");
+            string textToBeExtracted = System.IO.File.ReadAllText(@"inputText.txt");
             Console.WriteLine(textToBeExtracted.Length);
             var APIEndPoint = "https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/keyPhrases";
-            string APIKey = System.IO.File.ReadAllText(@"C:\Users\Joyli\Desktop\KPE_key.txt");
+            string APIKey = System.IO.File.ReadAllText(@"KPE_key.txt");
 
             // make a new instance of HttpClient to make POST requests and extract key-phrases
             HttpClient httpClient = new HttpClient();
